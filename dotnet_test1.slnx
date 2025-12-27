@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="check.cs" />
+  </Folder>
   <Project Path="dotnet_test1.csproj" />
 </Solution>
