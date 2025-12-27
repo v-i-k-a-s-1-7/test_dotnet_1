@@ -38,7 +38,6 @@ namespace Question2
                     case 1:
                         lastBill = new PatientBill();
 
-                        Console.WriteLine("(\"================== QuickMart Traders ==================\");");
                         Console.Write("Enter Bill Id: ");
                         lastBill.BillId = Console.ReadLine();
 
