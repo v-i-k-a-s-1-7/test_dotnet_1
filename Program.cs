@@ -60,8 +60,8 @@ namespace dotnet_test1
                         Console.WriteLine('\n');
                         Console.WriteLine("Transaction created successfully.");
                         Console.WriteLine("Status: " + lastTransaction.ProfitOrLossStatus);
-                        Console.WriteLine("Profit/Loss Amount: " + lastTransaction.ProfitOrLossAmount);
-                        Console.WriteLine("Profit Margin (%): " + lastTransaction.ProfitMarginPercentage );
+                        Console.WriteLine($"Profit/Loss Amount: {Math.Round(lastTransaction.ProfitOrLossAmount, 2)}");
+                        Console.WriteLine($"Profit Margin (%): {Math.Round(lastTransaction.ProfitMarginPercentage,2)}" );
 
 
                         break;
@@ -74,11 +74,11 @@ namespace dotnet_test1
                             Console.WriteLine($"Customer Name: {lastTransaction.CustomerName}");
                             Console.WriteLine($"Item Name: {lastTransaction.ItemName}");
                             Console.WriteLine($"Quantity: {lastTransaction.Quantity}");
-                            Console.WriteLine($"Purchase Amount: {lastTransaction.PurchaseAmount}");
-                            Console.WriteLine($"Selling Amount: {lastTransaction.SellingAmount}");
+                            Console.WriteLine($"Purchase Amount: {Math.Round(lastTransaction.PurchaseAmount,2)}");
+                            Console.WriteLine($"Selling Amount: {Math.Round(lastTransaction.SellingAmount,2)}");
                             Console.WriteLine($"Profit/Loss Status: {lastTransaction.ProfitOrLossStatus}");
-                            Console.WriteLine($"Profit/Loss Amount: {lastTransaction.ProfitOrLossAmount}");
-                            Console.WriteLine($"Profit Margin Percentage: {lastTransaction.ProfitMarginPercentage}%");
+                            Console.WriteLine($"Profit/Loss Amount: {Math.Round(lastTransaction.ProfitOrLossAmount, 2)}");
+                            Console.WriteLine($"Profit Margin Percentage: {Math.Round(lastTransaction.ProfitMarginPercentage, 2)}");
                         }
                         else
                         {
@@ -91,8 +91,8 @@ namespace dotnet_test1
                         if (lastTransaction != null)
                         {
                             Console.WriteLine($"Recomputed Profit/Loss Status: {lastTransaction.ProfitOrLossStatus}");
-                            Console.WriteLine($"Recomputed Profit/Loss Amount: {lastTransaction.ProfitOrLossAmount}");
-                            Console.WriteLine($"Recomputed Profit Margin Percentage: {lastTransaction.ProfitMarginPercentage}%");
+                            Console.WriteLine($"Recomputed Profit/Loss Amount: {Math.Round(lastTransaction.ProfitOrLossAmount, 2)}");
+                            Console.WriteLine($"Recomputed Profit Margin Percentage: {Math.Round(lastTransaction.ProfitMarginPercentage, 2)}");
                         }
                         else
                         {

@@ -12,7 +12,10 @@ namespace dotnet_test1
         public string InvoiceNo { get; set; }
         public string CustomerName { get; set; }
         public string ItemName { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity {
+            get; set;
+        }
+
         public decimal PurchaseAmount { get; set; }
         public decimal SellingAmount { get; set; }
 
@@ -55,7 +58,7 @@ namespace dotnet_test1
                 {
                     return 0;
                 }
-                return (ProfitOrLossAmount / PurchaseAmount) * 100;
+                return (ProfitOrLossAmount / PurchaseAmount) * 100m;
             }
         }
     }
